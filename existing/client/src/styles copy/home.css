@@ -1,0 +1,43 @@
+.home-heading {
+  margin: 0% 0% 2% 0%;
+}
+
+.about-div {
+  margin: 0% 0% 7.5% 0%;
+  line-height: 210%;
+  font-size: 19px;
+  padding: 110px 30px;
+}
+
+#home_image_div {
+  background-image: url("../assets/images/arumuganeri_railway_station.jpg");
+
+  width: 100%;
+  background-repeat: no-repeat;
+
+  background-position: center;
+
+  background-size: cover;
+
+  height: 0;
+
+  padding-top: 66.64%;
+}
+
+/* Mobile view */
+@media only screen and (max-width: 600px) {
+  .about-div {
+    font-size: 16px;
+    padding: 55px 15px;
+  }
+
+  .container {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  /* To increase padding in navbar */
+  header > .container {
+    padding: 15px;
+  }
+}

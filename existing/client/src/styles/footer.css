@@ -1,0 +1,31 @@
+:root {
+  --FOOTER-FONT-COLOR: #989c9e;
+}
+
+footer {
+  color: var(--FOOTER-FONT-COLOR);
+  padding: 160px 25px;
+  margin-top: 20%;
+}
+
+/*  Descendant selector to select all the nav-links within the footer */
+footer .nav-link {
+  color: var(--FOOTER-FONT-COLOR) !important;
+}
+
+footer .nav-link:hover {
+  color: #fff !important;
+}
+
+/* Mobile view */
+@media only screen and (max-width: 600px) {
+  .footer-div {
+    margin: 25px;
+    margin-top: 25px;
+  }
+
+  footer {
+    padding: 10% 1%;
+    margin-top: 30%;
+  }
+}

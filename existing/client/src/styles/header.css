@@ -1,0 +1,45 @@
+:root {
+  --LINK-FONT-COLOR: #989c9e;
+}
+
+nav {
+  border-bottom: 2px solid white;
+}
+
+.navbar-nav {
+  margin-left: auto !important;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: #dee0df !important;
+}
+
+.nav-link:visited {
+  color: #ffffff;
+}
+
+.navbar-brand {
+  color: #ffffff;
+}
+
+.navbar-brand:hover {
+  color: #ffffff;
+}
+
+/* Used for the toogle nav bar button */
+.navbar-dark {
+  border: 2px solid #dee0df;
+}
+
+.navbar-dark:visited {
+  border: 2px solid #dee0df;
+}
+
+.dropdown-item,
+.dropdown-item:hover {
+  color: black !important;
+}

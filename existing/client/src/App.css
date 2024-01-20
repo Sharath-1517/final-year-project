@@ -1,0 +1,164 @@
+:root {
+	--FORM-BACKGROUND-COLOR: #ffffff;
+	--OVERALL-BACKGROUND-COLOR: rgba(var(--b3f, 250, 250, 250), 1);
+	--PRIMARY-THEME-COLOR: #4f018a /* #6302ad */;
+	--PRIMARY-THEME-COLOR2: #a263fa;
+	--DARK-THEME-COLOR: #a33ccf;
+	--FOOTER_COLOR: #262626;
+}
+
+/*bootstrap fix*/
+html,
+body {
+	overflow-x: hidden;
+}
+
+body {
+	background-color: var(--OVERALL-BACKGROUND-COLOR);
+}
+
+header {
+	border-bottom: 2px solid rgba(var(--b6a, 219, 219, 219), 1);
+	background-color: var(--PRIMARY-THEME-COLOR);
+}
+
+header nav {
+	padding: 20px 10% !important;
+}
+
+main {
+	min-height: 85vh;
+
+	/*  margin-top is used to avoid being hidden by header navbar */
+	margin-top: 74px;
+}
+
+footer {
+	border-top: 2px solid rgba(var(--b6a, 219, 219, 219), 1);
+	background-color: var(--FOOTER_COLOR);
+}
+
+a {
+	text-decoration: none;
+}
+ul {
+	list-style-type: none;
+	padding-left: 0%;
+}
+
+label {
+	font-weight: bold;
+}
+
+.my-border {
+	/* Instagram border */
+	border: 1px solid rgba(var(--b6a, 219, 219, 219), 1) !important;
+}
+
+.my-heading {
+	text-transform: uppercase;
+	margin-bottom: 5%;
+}
+
+.my-full-width {
+	width: 100%;
+}
+
+.my-btn {
+	margin: 5% 0% 0% 0%;
+}
+
+.my-form {
+	padding: 6%;
+	margin: 15% 0% 8% 0%;
+	background-color: var(--FORM-BACKGROUND-COLOR);
+}
+
+.sub-form {
+	text-align: center;
+	padding: 3%;
+	margin-bottom: 10%;
+	background-color: var(--FORM-BACKGROUND-COLOR);
+}
+
+.form-control {
+	margin: 2% 0% 2% 0%;
+}
+
+.error-div {
+	color: red;
+}
+
+.success-div {
+	color: green;
+}
+
+.white-div {
+	background-color: #ffffff;
+	padding: 2%;
+	margin: 2%;
+}
+
+.list-style-none {
+	list-style-type: none;
+	padding: 0;
+}
+
+/*Bootstrap override */
+.card-header {
+	background-color: #ffffff;
+}
+
+.white-background {
+	background-color: #ffffff;
+}
+
+.theme-color {
+	background-color: var(--PRIMARY-THEME-COLOR);
+	color: #ffffff !important;
+}
+
+.btn-primary {
+	background-color: var(--PRIMARY-THEME-COLOR);
+	border: var(--PRIMARY-THEME-COLOR);
+}
+
+.btn-primary:hover {
+	background-color: var(--DARK-THEME-COLOR);
+}
+
+.main-top-margin {
+	margin-top: 10% !important;
+}
+
+.footer-date-div {
+	font-size: small;
+}
+
+/* Sample gallery image in home page  */
+.sample-gallery-card-img-top {
+	width: 100%;
+	height: 20vw;
+	object-fit: cover;
+}
+
+#recaptcha {
+	width: 304px;
+	margin: 0 auto;
+}
+
+#breadcrumb {
+	border-bottom: 1.5px solid #989c9e;
+	margin-top: 0% !important;
+}
+/* Mobile view */
+@media only screen and (max-width: 600px) {
+	.main-top-margin {
+		margin-top: 17% !important;
+	}
+
+	.my-container {
+		padding-left: 3% !important;
+		padding-right: 3% !important;
+	}
+}
