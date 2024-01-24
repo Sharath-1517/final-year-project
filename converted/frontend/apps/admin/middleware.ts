@@ -9,7 +9,7 @@ const redirectIfAuthenticated: Middleware = (request) => {
   const authSession = request.cookies.get("passcode")?.value;
 
   if (authSession) {
-    return NextResponse.redirect(new URL("/", request.url));
+    return NextResponse.redirect(new URL("/dashboard", request.url));
   }
 
   return NextResponse.next();
@@ -32,17 +32,17 @@ const authenticated: Middleware = (request) => {
 };
 
 export default function middleware(request: NextRequest) {
-  // if (WHITE_LIST_URL.includes(request.nextUrl.pathname)) {
-  //   return NextResponse.next();
-  // }
+  if (WHITE_LIST_URL.includes(request.nextUrl.pathname)) {
+    return NextResponse.next();
+  }
 
-  // if (["/admin-login"].includes(request.nextUrl.pathname)) {
-  //   return redirectIfAuthenticated(request);
-  // }
+  if (["/admin-login"].includes(request.nextUrl.pathname)) {
+    return redirectIfAuthenticated(request);
+  }
 
-  // if (!["/admin-login"].includes(request.nextUrl.pathname)) {
-  //   return authenticated(request);
-  // }
+  if (!["/admin-login"].includes(request.nextUrl.pathname)) {
+    return authenticated(request);
+  }
 
   return NextResponse.next();
 }

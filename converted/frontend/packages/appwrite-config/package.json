@@ -1,0 +1,13 @@
+{
+  "name": "@repo/appwrite-config",
+  "version": "0.0.0",
+  "description": "Appwrite Config",
+  "main": "index.js",
+  "dependencies": {
+    "appwrite": "^13.0.1"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@repo/eslint-config": "workspace:*"
+  }
+}

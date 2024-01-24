@@ -1,8 +1,30 @@
 // Components
-export * as Form from "./Form";
-export { Input } from "./Input";
-export { Label } from "./Label";
-export { Button } from "./Button";
+import {
+  FormControl,
+  FormDescription,
+  FormField,
+  FormLabel,
+  FormMessage,
+  FormItem,
+  Form,
+} from "./Form";
+import { Input } from "./Input";
+import { Label } from "./Label";
+import { Button } from "./Button";
 
 // Layouts
-export * as LoginLayout from "./Layouts/LoginLayout";
+import LoginLayout from "./LoginLayout";
+
+export {
+  LoginLayout,
+  Input,
+  Label,
+  Button,
+  Form,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormDescription,
+  FormMessage,
+  FormControl,
+};
